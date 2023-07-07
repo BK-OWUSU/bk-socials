@@ -1,0 +1,89 @@
+/*=========== TABLETS SCREENS ===============*/
+@media screen and (max-width: 1280px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .main_container {
+        grid-template-columns: 5rem auto 30vw;
+        gap: 1rem;
+    }
+
+    .main_left {
+        width: 5rem;
+        z-index: 5;
+    }
+
+    .main_left .profile {
+        display: none;
+    }
+
+    .main_left .sidebar h3 {
+        display: none;
+    }
+
+    .main_left  .btn {
+        display: none;
+    }
+
+    .font_size_card {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .theme_card {
+        padding: 2rem;
+        width: 80%;
+    }
+       
+}
+
+/*====== SMALL TABLETS AND MOBILE PHONES ======*/ 
+@media screen and (max-width: 992px) {
+    nav .search_bar {
+        display: none;
+    }
+
+    .main_container {
+        grid-template-columns: 0 auto 5rem;
+        gap: 0;
+    }
+
+    .main_left {
+        grid-column: 3/4;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .main_middle {
+        grid-column: 1/3;
+    }
+
+   .main_right { 
+        display: none;
+   }
+
+
+   .notification_pop {
+    position: absolute;
+    left: -21rem;
+    width: 20rem;
+    }
+
+    .notification_pop::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: calc(20rem - 0.6rem);
+    }   
+    
+}
+
+
+/*------For Very small screens*/
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 11px;
+    }
+}
